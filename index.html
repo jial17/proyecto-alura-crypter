@@ -7,22 +7,29 @@
     <title>Alura-crypter</title>
     <link rel="stylesheet" href="css/reset.css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <div class="principal">
             <div class="entrada">
-                <img src="alura" alt="">
-                <label for="textArea">ingrese texto aquí</label>
-                <textarea name="textArea" id="textArea" cols="30" rows="50"></textarea>
-                <p>solo letras minúsculas</p>
-                <div class="botones">
-                    <button>Encriptar</button>
-                    <button>Desencriptar</button>
+                <div class="logo">
+                    <img src="images/letraA.png" alt="alura" id="letraA">
                 </div>
+                <form action="">                    
+                    <textarea name="textAreaEntrada" id="input-entrada" cols="30" rows="15" placeholder="Ingrese texto aquí"></textarea>
+                    <p><span><img src="images/admiracion.png" alt="" srcset=""></span> Solo letras minúsculas</p>
+                    <div class="botones">
+                        <button id="encriptar">Encriptar</button>
+                        <button id="desencriptar">Desencriptar</button>
+                    </div>
+                </form>
             </div>
             <div class="salida">
-
+                <textarea name="textAreSalida" id="txt-salida" cols="30" rows="10" placeholder="ingresa el texto que deseas encriptar"></textarea>
+                <img src="images/Muñeco.png" alt="niño">
+                <button id="copiar-des">Copiar</button>
+                
             </div>
         </div>
     </main>

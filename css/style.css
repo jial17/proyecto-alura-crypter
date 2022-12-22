@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap'); 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #F3F5FC;
+    min-height: 100vh;
+}
+
+main{
+    display: flex;
+
+}
+.principal{
+    display: flex;
+    width: 100%;
+}
+
+.principal .entrada{
+    width: 840px;
+    height: 944px;
+  
+}
+.principal .entrada .logo{
+    display: flex;
+    width: 120px;
+    height: 48px;
+    justify-content: center;
+    margin: 40px 0 0 40px;
+}
+.principal .entrada .logo #letraA{
+    position: relative;
+    vertical-align: top;
+    width: 31px;
+    height: 48px;
+}
+.principal .entrada form{
+position: relative;
+margin: 80px 80 0 240px;
+
+}
+#input-entrada{
+    width: 680px;
+    height: 288px;
+    border: none;
+    background: #F3F5FC;
+    position: relative;
+    top: 1em;
+    margin: 1em 0;
+}
+ #input-entrada, #input-entrada::placeholder{
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+
+.botones{
+    padding-top: .75em;
+    display: flex;
+}
+.botones #encriptar{
+    color: white;
+    background: #0A3871;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    border: none;
+    margin-right: 1em;
+}
+.botones #desencriptar, #copiar-des{
+    color:#0A3871;
+    background: #D8DFE8;
+    height: 67px;
+    width: 328px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    border-color: none;
+}
+
+.salida{
+    width: 400px;
+    height: 944px;
+    background: white;
+    border-radius: 32px;
+    margin: 40px 40px 40px 0;
+}
+#txt-salida{
+    visibility: hidden;
+}

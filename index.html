@@ -11,13 +11,13 @@
 </head>
 <body>
     <main>
-        <div class="principal">
-            <div class="entrada">
-                <div class="logo">
-                    <img src="images/letraA.png" alt="alura" id="letraA">
-                </div>
+        <div class="entrada">
+            <div class="logo">
+                <img src="images/letraA.png" alt="alura" id="letraA">
+            </div>
+            <div class="form">
                 <form action="">                    
-                    <textarea name="textAreaEntrada" id="input-entrada" cols="30" rows="15" placeholder="Ingrese texto aquí"></textarea>
+                    <textarea name="textAreaEntrada" id="text-entrada" cols="30" rows="15" placeholder="Ingrese texto aquí"></textarea>
                     <p><span><img src="images/admiracion.png" alt="" srcset=""></span> Solo letras minúsculas</p>
                     <div class="botones">
                         <button id="encriptar">Encriptar</button>
@@ -25,11 +25,12 @@
                     </div>
                 </form>
             </div>
-            <div class="salida">
+        </div>
+        <div class="salida">
+            <div class="contenedor">
                 <textarea name="textAreSalida" id="txt-salida" cols="30" rows="10" placeholder="ingresa el texto que deseas encriptar"></textarea>
-                <img src="images/Muñeco.png" alt="niño">
+                <img src="images/Muñeco.png" alt="niño" id="niño">
                 <button id="copiar-des">Copiar</button>
-                
             </div>
         </div>
     </main>

@@ -1,4 +1,6 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap'); 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,69 +15,70 @@ body{
 }
 
 main{
-    display: flex;
-
-}
-.principal{
-    display: flex;
+    position: relative;
     width: 100%;
+    height: 100vh;
+    display: flex;
 }
-
-.principal .entrada{
-    width: 840px;
-    height: 944px;
+.entrada{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: calc((1000/1440)*100%);
+    height: 100vh;
   
 }
-.principal .entrada .logo{
+
+.entrada .logo{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: relative;
     width: 120px;
     height: 48px;
-    justify-content: center;
-    margin: 40px 0 0 40px;
-}
-.principal .entrada .logo #letraA{
-    position: relative;
-    vertical-align: top;
-    width: 31px;
-    height: 48px;
-}
-.principal .entrada form{
-position: relative;
-margin: 80px 80 0 240px;
+    margin: 40px  0 80px 40px;
 
 }
-#input-entrada{
-    width: 680px;
+
+
+.entrada .form{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 24%;
+    padding-right: 8%;
+    padding-bottom: 72px;
+    
+}
+.entrada .form #text-entrada{
+    width: 100%;
     height: 288px;
     border: none;
-    background: #F3F5FC;
-    position: relative;
-    top: 1em;
     margin: 1em 0;
+    background: #F3F5FC;
 }
- #input-entrada, #input-entrada::placeholder{
-    color: #0A3871;
-    font-weight: 400;
-    font-size: 2rem;
+#text-entrada, #text-entrada::placeholder{
+   color: #0A3871;
+   font-weight: 400;
+   font-size: 2rem;
 }
 
+.entrada form p{
+    position: relative;
+    padding-top: 325px;
+    padding-bottom: 16px;
+}
 
-
-.botones{
-    padding-top: .75em;
+.entrada .form .botones{
     display: flex;
+    position: relative;
+    
 }
-.botones #encriptar{
-    color: white;
-    background: #0A3871;
-    height: 67px;
-    width: 328px;
-    border-radius: 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    border: none;
-    margin-right: 1em;
-}
+
 .botones #desencriptar, #copiar-des{
     color:#0A3871;
     background: #D8DFE8;
@@ -83,18 +86,51 @@ margin: 80px 80 0 240px;
     width: 328px;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
-    border-color: none;
+    }
+.botones #encriptar{
+    color: white;
+    background: #0A3871;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    font-size: 24px;
+    border: none;
+    margin-right: 1em;
 }
 
 .salida{
-    width: 400px;
-    height: 944px;
-    background: white;
-    border-radius: 32px;
-    margin: 40px 40px 40px 0;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: calc((440/1440)*100%);
+    height: 100vh; 
+    padding-top: 40px;   
+    padding-right: 2.78%;
 }
+.salida .contenedor{
+    height: 100vh;
+    width: 100%;
+    background: #FFFFFF;  
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px; 
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.salida .contenedor #copiar-des{
+    position: relative;
+    margin-bottom: 32px;
+    max-width: 80%;
+    
+}
+.salida .contenedor #niño{
+    width: 100%;
+}
+
 #txt-salida{
     visibility: hidden;
+    width: 100%;
 }
